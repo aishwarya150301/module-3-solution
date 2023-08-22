@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment solution for module 3</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="nav">
+        <h2 class="nav-header">
+            Food LLC
+        </h2>
+        <button class="nav-btn">
+            <img src="img/ham-menu.png" alt="">
+        </button>
+    </nav>
+    <div class="menu hidden">
+        <div class="menu-item">Chicken</div>
+        <div class="menu-item">Beef</div>
+        <div class="menu-item">Sushi</div>
+    </div>
+    <div class="container">
+        <div class="container-header">
+            <h4 class="container-header-text">Our Menu</h4>
+        </div>
+        <div class="container-body">
+            <div class="container-body-item">
+                <div class="item-title">Chicken</div>
+                <div class="item-details">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam, nemo optio? Molestiae consequuntur animi distinctio voluptatum tempore officia quaerat placeat officiis earum quam! Ipsam facilis recusandae mollitia expedita itaque commodi fugit repellat qui veniam! Laborum delectus ducimus neque architecto nostrum animi. Aliquid culpa suscipit eos voluptatem voluptates accusantium praesentium dolore.</div>
+            </div>
+            <div class="container-body-item">
+                <div class="item-title">beef</div>
+                <div class="item-details">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque odio asperiores voluptatibus, quam enim aliquid deserunt praesentium nesciunt pariatur, harum nemo error dolore ad vero deleniti nulla! Exercitationem reiciendis officiis quaerat vero natus, aliquid cum ullam alias harum beatae, ut enim perferendis dolor error impedit ab. Asperiores repudiandae quo similique.</div>
+            </div>
+            <div class="container-body-item">
+                <div class="item-title">sushi</div>
+                <div class="item-details">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat reiciendis libero quo est officiis odit dolore saepe nam! Voluptatum eaque dignissimos incidunt sit quas necessitatibus corrupti aspernatur tempora quos praesentium minima qui porro perspiciatis eveniet corporis eos, sed quaerat at natus beatae pariatur, nulla deserunt. Ducimus commodi amet accusamus odit?</div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const nav_btn = document.querySelector('.nav-btn');
+        const menu = document.querySelector('.menu')
+        nav_btn.addEventListener('click',function(){
+            menu.classList.toggle('hidden')
+        })
+    </script>
+</body>
+</html>
